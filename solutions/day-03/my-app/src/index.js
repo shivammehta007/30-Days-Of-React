@@ -3,6 +3,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import gravitational_lensing from './images/gravitational_lensing.png'
 import {customModule} from './custom_module.js'
+import { customModule2 } from './exercise2_2'
 
 // JSX element, header
 const header = (
@@ -13,15 +14,16 @@ const header = (
       <h3>JavaScript Library</h3>
       <p>Instructor: Asabeneh Yetayeh</p>
       <small>Date: Oct 1, 2020</small>
+      {customModule2}
     </div>
   </header>
 )
 
-const lensing = (
-  <div>
-    <img src={gravitational_lensing} alt='gravitational_lensing' />
-  </div>
-)
+// const lensing = (
+//   <div>
+//     <img src={gravitational_lensing} alt='gravitational_lensing' />
+//   </div>
+// )
 
 // JSX element, main
 const main = (
@@ -39,8 +41,8 @@ const main = (
         <li>CSS</li>
         <li> JavaScript</li>
       </ul>
-      {lensing}
-      {customModule}
+      {/* {lensing} */}
+      {/* {customModule} */}
     </div>
   </main>
 )
