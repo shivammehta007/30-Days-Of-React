@@ -6,7 +6,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // Header Component
 
 
-const welcome = 'Welcome to 30 Days Of React Challenge'
 const title = 'Getting Started React'
 const subtitle = 'JavaScript Library'
 const author = {
@@ -16,10 +15,10 @@ const author = {
 const date = 'Oct 2, 2020'
 
 
-const Header = () => (
+const Header = (props) => (
   <header>
     <div className='header-wrapper'>
-      <h1>{welcome}</h1>
+      <h1>{props.welcome}</h1>
       <h2>{title}</h2>
       <h3>{subtitle}</h3>
       <p>
@@ -83,7 +82,7 @@ const Button = () => <button style={{
 
 const App = () => (
   <div className='app'>
-    <Header />
+    <Header welcome="Welcome to 30 days of React"/>
     {hexaColor()}
     <Main />
     <Footer />
